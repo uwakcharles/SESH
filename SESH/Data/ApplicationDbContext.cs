@@ -36,7 +36,7 @@ namespace SESH.Data
 
             modelBuilder.Entity<Meeting>()
                 .HasOne(m => m.BookedWith)
-                .WithMany(u => u.MeetinngsWith)
+                .WithMany(u => u.MeetingsWith)
                 .HasForeignKey(m => m.BookedWithId)
                 .OnDelete(DeleteBehavior.Restrict);
 
