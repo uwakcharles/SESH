@@ -1,8 +1,8 @@
- SESH — Student Engagement & Support Hub
+# SESH — Student Engagement & Support Hub
 
 A digital system to enhance the Personal Supervisor process at the Department of Computer Science and Technology, enabling proactive student support through well-being tracking, meeting management, and data-driven insights.
 
-Table of Contents
+**Table of Contents**
 
 Overview
 
@@ -24,70 +24,70 @@ Contributing
 
 License
 
-Overview
+**Overview**
 
 SESH transforms student support from a reactive model to a proactive, data-informed system.
 It supports three main roles:
 
-Students: Submit well-being reports & book meetings
+- Students: Submit well-being reports & book meetings
 
-Personal Supervisors: Monitor and support assigned students
+- Personal Supervisors: Monitor and support assigned students
 
-Senior Tutors: View analytics and oversee engagement trends
+- Senior Tutors: View analytics and oversee engagement trends
 
-Features
+**Features**
 
 Students
 
-Weekly well-being check-ins
+- Weekly well-being check-ins
 
-Meeting booking with supervisors
+- Meeting booking with supervisors
 
-Progress tracking & history
+- Progress tracking & history
 
-Secure role-based login
+- Secure role-based login
 
 Personal Supervisors
 
-Student dashboard with alerts
+- Student dashboard with alerts
 
-Automated “Struggling”/“In Crisis” notifications
+- Automated “Struggling”/“In Crisis” notifications
 
-Meeting and availability management
+- Meeting and availability management
 
-Student registration
+- Student registration
 
 Senior Tutors
 
-Cohort-level analytics
+- Cohort-level analytics
 
-Engagement tracking
+- Engagement tracking
 
-Full user management
+- Full user management
 
-System oversight
+- System oversight
 
-Architecture
+- Architecture
 
 Tech Stack:
 
-Backend: .NET 8.0 (C#)
+- Backend: .NET 8.0 (C#)
 
-Database: SQLite (EF Core)
+- Database: SQLite (EF Core)
 
-Testing: xUnit, Moq
+- Testing: xUnit, Moq
 
-CI/CD: GitHub Actions
+- CI/CD: GitHub Actions
 
-Design:
+**Design:**
 
-Repository & Service Layer patterns
+-Repository & Service Layer patterns
 
-Dependency Injection
+-Dependency Injection
 
-Console-based MVC
+-Console-based MVC
 
-Installation
+-Installation
 
 Prerequisites:
 
