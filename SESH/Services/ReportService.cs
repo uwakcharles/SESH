@@ -67,9 +67,11 @@ namespace SESH.Services
             return lastReport == null || lastReport.SubmittedAt < DateTime.UtcNow.AddDays(-7);
         }
 
-        private async Task FlagReportForSupervisor(WellBeingReport report)
+        private Task FlagReportForSupervisor(WellBeingReport report)
         {
+            // simple sync work — return completed task to avoid CS1998
             Console.WriteLine($"ALERT: Student {report.StudentId} reported status: {report.Status}");
+            return Task.CompletedTask;
         }
     }
 }

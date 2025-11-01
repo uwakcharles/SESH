@@ -9,7 +9,7 @@ namespace SESH.Models
     /// then manage relationships with meetings.
     /// and provide methods for authentication.
     /// <summary/>
-    public class User : BaseModel
+    public abstract class User : BaseModel
     {
         [Required, StringLength(100)]
         public string Name { get; set; } = string.Empty;
