@@ -17,8 +17,14 @@ namespace SESH.Services
         public async Task<User?> LoginAsync(string email, string password)
         {
             var user = await _context.Users
-                .Include(u => u is Student ? (u as Student)!.PersonalSupervisor : null)
                 .FirstOrDefaultAsync(u => u.Email == email);
+
+            if (user is Student student)
+            {
+                await _context.Entry(student).Reference(s => s.PersonalSupervisor).LoadAsync();
+            }
+
+            // If you still need other user types, you must also query them separately.
 
             if (user == null || !user.Authenticate(password))
                 return null;
