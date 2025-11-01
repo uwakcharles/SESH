@@ -97,7 +97,7 @@ Git
 
 Visual Studio / VS Code
 
-git clone https://github.com/YOUR-USERNAME/SESH.git
+git clone [https://github.com/YOUR-USERNAME/SESH.git](https://github.com/uwakcharles/SESH.git)
 cd SESH
 dotnet restore
 dotnet build
