@@ -11,7 +11,7 @@ namespace SESH.Models
     /// <summary/>
     public class User : BaseModel
     {
-        [Required, StringLength(100)]]
+        [Required, StringLength(100)]
         public string Name { get; set; } = string.Empty;
 
         [Required, EmailAddress, StringLength(255)]
