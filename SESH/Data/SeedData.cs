@@ -13,12 +13,12 @@ namespace SESH.Data
             {
                 var adminTutor = new SeniorTutor()
                 {
-                    Name = "Uwak Charles",
-                    Email = "u.charles-2022@hull.ac.uk",
+                    Name = "Administrator",
+                    Email = "admin@hull.ac.uk",
                     StaffId = "ST001",
                     Role = UserRole.SeniorTutor
                 };
-                adminTutor.SetPassword("uwak123");
+                adminTutor.SetPassword("admin123");
                 context.SeniorTutors.Add(adminTutor);
 
                 context.SaveChanges();
